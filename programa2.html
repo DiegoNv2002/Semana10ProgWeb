@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Registro de datos</h1>
+        <form action="datos.php" method="post"></form>
+        <table>
+            <tr>
+                <td>Nombre:</td>
+                <td><input type="text" name="nombre"></td>
+            </tr>
+            <tr>
+                <td>Apellidos:</td>
+                <td><input type="text" name="apellidos"></td>
+            </tr>
+            <tr>
+                <td>Correo:</td>
+                <td><input type="text" name="correo"></td>
+            </tr>
+            <tr>
+                <td>Genero:</td>
+                <td>
+                    <input type="radio" name="sexo" value="V"/> Varon<br/>
+                    <input type="radio" name="sexo" value="M"/> Mujer
+                </td>
+            </tr>
+            <tr>
+                <td>Estado Civil:</td>
+                <td><select name="estado">
+                    <option>Estado Civil</option>
+                    <option value="">soltero</option>
+                    <option value="Casado">casado</option>
+                    <option value="Viudo">viudo</option>
+                    <option value="divorciado">divorciado</option>
+                </select></td>
+            </tr>
+        </table>
+        <p>Comentario:</p>
+        <textarea name="comentario" rows="5" cols="50"></textarea>
+        <p><input type="submit" value="Comprobar el formulario">
+        <input type="reset" value="borrar todo"></p>
+    </body>
+</html>
